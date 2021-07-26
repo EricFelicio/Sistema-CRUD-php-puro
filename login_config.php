@@ -9,12 +9,12 @@ if(empty($_POST['usuario']) || empty($_POST['senha'])) {
 	exit();
 }
 
-//Setando as variaveis para do usuario e senha digitadas
+//Informando as variaveis para do usuario e senha digitadas
 $usuario = mysqli_real_escape_string($conexao, $_POST['usuario']);
 $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
 
 //Buscando no BD o usuario digitado
-$query = "select * from login.usuario where usuario = '{$usuario}' and senha = md5('{$senha}')";
+$query = "select * from apolo20_dev.usuario where usuario = '{$usuario}' and senha = md5('{$senha}')";
 
 $result = mysqli_query($conexao, $query);
 
