@@ -2,9 +2,11 @@
 session_start();
 include ('verifica_sessao.php');
 ?>
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
+
+<!-- conteudo do head -->
 <head>
 	<meta charset="utf-8">
 	<meta nome="viewport" content="width=device-width, innitial-scale=1.0">
@@ -14,8 +16,8 @@ include ('verifica_sessao.php');
   <link rel="stylesheet" type="text/css" href=style/index.css />
 </head>
 <body>
-<!-- navibar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#">Meta apolo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,9 +46,22 @@ include ('verifica_sessao.php');
   </div>
 </nav>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>	
-
+<!-- navibar -->
+<nav class="div_for_flex">
+  <nav class="top_head_nav">
+  <nav class="middle_head_nav">
+  <a href="index.php">Dashboard</a>
+  </nav>
+  <nav class="middle_head_nav">
+  <a href="vendas.php">Vendas</a>
+  </nav>
+  <nav class="middle_head_nav">
+  <a href="sites.php">Sites</a>
+  </nav>
+  <nav class="middle_head_nav">
+  <a href="emails.php">Emails</a>
+  </nav>
+</nav>
 <section>
   <article>
     <div class="nav_info_dash">
@@ -63,7 +78,14 @@ include ('verifica_sessao.php');
     </div>
   </article>
 </section>
+</nav>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>	
+
 </body>
+
+<!-- conteudo do footer -->
 <footer>
   <div class="footer_cop">
     <ul class="part_footer">
