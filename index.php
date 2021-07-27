@@ -11,6 +11,7 @@ include ('verifica_sessao.php');
 	<meta http-equiv="X-UA-Conpatible" content="ie=edge"> 
 	<title>Sitema Apolo</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href=style/index.css />
 </head>
 <body>
 <!-- navibar -->
@@ -46,5 +47,40 @@ include ('verifica_sessao.php');
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>	
 
+<section>
+  <article>
+    <div class="nav_info_dash">
+      <div class="nav2_info_dash">
+        <figure class="first_info img_nav">
+          <img src=img/info1.png width="200px" height="200px">
+          <img src=img/info2.png width="200px" height="200px">
+        </figure>
+        <figure class="second_info img_nav">
+          <img src=img/info3.png width="200px" height="200px">
+          <img src=img/info4.png width="200px" height="200px">
+        </figure>
+      </div>
+    </div>
+  </article>
+</section>
 </body>
+<footer>
+  <div class="footer_cop">
+    <ul class="part_footer">
+      <li>
+        <a href="contato">Contato</a>
+      </li>
+    </ul>
+    <ul class="part_footer">
+      <li>
+        <a href="blog">blog</a>
+      </li>
+    </ul>
+    <ul class="part_footer">
+      <li>
+        <a href="sobre">sobre</a>
+      </li>
+    </ul>
+  </div>
+</footer>
 </html>
