@@ -3,10 +3,7 @@ session_start();
 include ('verifica_sessao.php');
 ?>
 
-<!DOCTYPE html>
 <html>
-
-<!-- conteudo do head -->
 <head>
 	<meta charset="utf-8">
 	<meta nome="viewport" content="width=device-width, innitial-scale=1.0">
@@ -15,8 +12,8 @@ include ('verifica_sessao.php');
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href=style/index.css />
 </head>
-<body>
 
+<body>
 <form action="recebe_sites.php" method="POST">
     <label>Cliente: </label>
         <input type="text" name="cliente" /> <br/>
@@ -28,10 +25,8 @@ include ('verifica_sessao.php');
         <input type="float" name="valor" /> <br/>
     <button>Enviar</button>
 </form>	
-
 </body>
 
-<!-- conteudo do footer -->
 <footer>
   <div class="footer_cop">
     <ul class="part_footer">
