@@ -16,13 +16,13 @@ include ('verifica_sessao.php');
 <body>
 <form action="recebe_emails.php" method="POST">
     <label>Email: </label>
-        <input type="text" name="email_emails" /> <br/>
+        <input type="text" name="email" /> <br/>
     <label>Senha: </label>
-        <input type="text" name="senha_emails" /> <br/>
+        <input type="text" name="senha" /> <br/>
     <label>Cliente: </label>
-        <input type="text" name="cliente_emails" /> <br/>
+        <input type="text" name="cliente" /> <br/>
     <label>Data: </label>
-        <input type="date" name="data_emails" /> <br/>
+        <input type="date" name="data" /> <br/>
     <button>Enviar</button>
 </form>	
 </body>

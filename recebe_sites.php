@@ -19,10 +19,12 @@ $valor = mysqli_real_escape_string($conexao, $_POST['valor']);
 $query_sql="INSERT INTO `sites` (`cliente`, `dominio`, `data`, `valor`) VALUES ('$cliente', '$dominio', '$data', '$valor')";
 
 //Consulta se deu certo.
-if ($query_sql) {
-    echo ("certo");
+$result = mysqli_query($conexao, $query_sql);
+$row = mysqli_num_rows($result);
+if (!$row) {
+    echo ("Site enviado com sucesso.");
 } else {
-    ("errado");
+    echo ("Algo deu errado.");
 }
-$mysql -> close();
+$mysqli -> close();
 ?>
