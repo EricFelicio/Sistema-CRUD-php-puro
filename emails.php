@@ -14,15 +14,15 @@ include ('verifica_sessao.php');
 </head>
 
 <body>
-<form action="recebe_sites.php" method="POST">
+<form action="recebe_emails.php" method="POST">
+    <label>Email: </label>
+        <input type="text" name="email_emails" /> <br/>
+    <label>Senha: </label>
+        <input type="text" name="senha_emails" /> <br/>
     <label>Cliente: </label>
-        <input type="text" name="cliente" /> <br/>
-    <label>Dominio: </label>
-        <input type="text" name="dominio" /> <br/>
+        <input type="text" name="cliente_emails" /> <br/>
     <label>Data: </label>
-        <input type="date" name="data" /> <br/>
-    <label>Valor: </label>
-        <input type="float" name="valor" /> <br/>
+        <input type="date" name="data_emails" /> <br/>
     <button>Enviar</button>
 </form>	
 </body>
