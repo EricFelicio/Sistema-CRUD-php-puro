@@ -37,6 +37,9 @@ include ('verifica_sessao.php');
             <li><a class="dropdown-item" href="#">Sites</a></li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="relatorios.php">Relatórios</a>
+        </li>
       </ul>
       <div class="d-flex">
       	<label class="mr-3"><?php echo $nomeUser; ?></label>

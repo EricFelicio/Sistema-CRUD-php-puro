@@ -26,5 +26,6 @@ if (!$row) {
 } else {
     echo ("Algo deu errado.");
 }
+
 $mysqli -> close();
 ?>

@@ -15,9 +15,7 @@ $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
 
 //Buscando no BD o usuario digitado
 $query = "select * from apolo20_dev.usuario where usuario = '{$usuario}' and senha = md5('{$senha}')";
-
 $result = mysqli_query($conexao, $query);
-
 $row = mysqli_num_rows($result);
 
 //Validando se for verdadeiro/1 continuar, senão, voltar pro index.php	
