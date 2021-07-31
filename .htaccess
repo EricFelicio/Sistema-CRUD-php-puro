@@ -1,0 +1,34 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+Header set Set-Cookie HttpOnly;Secure
+
+# END WordPress
+# BEGIN HttpHeaders
+# The directives (lines) between "BEGIN HttpHeaders" and "END HttpHeaders" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  <FilesMatch "\.(php|html)$">
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1"
+    Header set Pragma "no-cache"
+    Header set Cache-Control "must-revalidate, no-cache, no-store"
+  </FilesMatch>
+</IfModule>
+
+# BEGIN HttpHeadersCookieSecurity
+# The directives (lines) between "BEGIN HttpHeadersCookieSecurity" and "END HttpHeadersCookieSecurity" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+php_flag session.cookie_httponly on
+php_flag session.cookie_secure on
+# END HttpHeadersCookieSecurity
